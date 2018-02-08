@@ -1,0 +1,114 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  list-style: none;
+  font-family: Montserrat;
+  font-weight: 300;
+}
+
+body {
+  padding: 20px;
+  background-color: ghostwhite;
+  color: white;
+}
+
+#app-container {
+  margin: 60px auto;
+  padding: 40px 0;
+  max-width: 500px;
+  background: darkslategray;
+  box-shadow: -20px -20px 0px 0px rgba(100,100,100,.1);
+}
+
+header {
+  border-bottom: 1px solid rgba(255,255,255,.3);
+  margin:0 50px;
+  letter-spacing: 1px;
+}
+
+h4 {
+  font-size: 15px;
+  font-weight: 200;
+  margin: 5px 0;
+}
+
+#todo-container {
+  margin: 35px 0 30px;
+}
+
+#todo-list, #completed-list {
+  padding: 0;
+}
+
+#todo-list>li, #completed-list>li {
+  color: ivory;
+  background-color: #213534;
+  padding: 10px 50px;
+  margin: 5px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.item-buttons {
+  display: flex;
+  align-items: center;
+}
+
+.item-buttons>* {
+  cursor: pointer;
+  margin: 0 5px;
+}
+
+.remove-button {
+  color: indianred;
+}
+
+.remove-button:hover {
+  color: brown;
+}
+
+.strike-out {
+  text-decoration: line-through;
+}
+
+#sort-list {
+  margin: 20px 50px 10px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+#sort-list>* {
+  margin: 0 5px;
+}
+
+form {
+  padding: 0 50px;
+}
+
+#form-inputs {
+  margin-top: 5px;
+  display: flex;
+}
+
+#form-inputs>input {
+  padding: 5px;
+  border: none;
+  width: calc(100% - 100px);
+  font-size: 14px;
+} 
+
+#form-inputs>button {
+  cursor: pointer;
+  margin-left: 10px;
+  border: 1px solid ivory;
+  color: white;
+  background-color: #213534;
+  padding: 0 8px;
+  font-size: 14px;
+}
+
+#form-inputs>button:hover {
+  box-shadow: 0px 0px 1px 1px ivory;
+}

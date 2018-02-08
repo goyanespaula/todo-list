@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>To-Do List</title>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" type="text/css">
+  <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+  <script src="script.js"></script>
+</head>
+<body>
+  <section id="app-container">
+    <header>
+      <h1>Todo List</h1>
+      <h4>Get things done, one item at a time</h4>
+    </header>
+    <section id="todo-container">
+      <ul id="todo-list">
+        <li id="0">
+          <p>👋 Let's get things done!</p>
+          <div class="item-buttons">
+            <input class="complete-checkmark" type="checkbox">
+            <a class="remove-button"><i class="fas fa-trash-alt"></i></a>
+          </div>
+        </li>
+      </ul>
+      <ul id="completed-list">
+      </ul>
+      <section id="sort-list">
+        <h4>Move finished items to the end?</h4>
+        <input id="sort-button" type="checkbox">
+      </section>
+    </section>
+    <form action="">
+      <label for="task">Add Task!</label>
+      <div id="form-inputs">
+        <input id="task" type="text" placeholder="add a todo!">
+        <button type="submit">Add Todo!</button>
+      </div>
+    </form>
+  </section>
+</body>
+</html>
